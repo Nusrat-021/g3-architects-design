@@ -1,5 +1,5 @@
 @media screen and (max-width: 576px) {
-  .header-container,.nav-container, nav ul,.feature,.loving-feature,.achievement{
+  .header-container,.nav-container, nav ul,.feature,.loving-feature,.achievement,.sponsors,.sponsor{
     width: 100%;
     flex-direction: column;
     padding:5px;
@@ -10,7 +10,7 @@
   .logo{
     font-size: 30px;
   }
-  nav ul,.achievement{
+  nav ul,.achievement,.sponsors{
     flex-direction: column;
     gap:5px;
   }
@@ -30,7 +30,7 @@
   .feature-image-set, .projects{
     grid-template-columns: repeat(1, 1fr);
   }
-  .feature-info{
+  .feature-info,.sponsor-info{
     margin: 0;
     text-align: center;
   }
@@ -47,7 +47,7 @@
     font-size: 16px;
   }
 
-  .achievement-info{
+  .achievement-info,.sponsor-info{
     width: 100%;
     text-align: center;
   }
@@ -58,12 +58,19 @@
   .achievement-details:hover{
     transform:scale(1.05,1.05) ;
   }
+  .sponsor{
+    padding:0 100px;
+  }
+ .footer{
+  margin: 5px;
+  margin-bottom: 100px;
+ }
 
 }
 
 
 @media screen and (min-width:577px) and (max-width:768px) {
-  .header-container,.nav-container, nav ul,.achievement{
+  .header-container,.nav-container, nav ul,.achievement,.sponsors{
     width: 100%;
     padding: 15px;
 
@@ -82,22 +89,23 @@
     font-size: 35px;
     margin-top: 50px;
   }
+  
   .feature-image-set,.projects{
     grid-template-columns: repeat(1, 1fr);
   }
-  .feature,.loving-feature,.achievement{
+  .feature,.loving-feature,.achievement,.sponsors{
     flex-direction: column;
     
   }
-  .container,.achievement{
+  .container,.achievement,.feature-image-set{
     width: 100%;
     padding: 0;
   }
-  .feature-list,.achievement-info{
+  .feature-list,.achievement-info,.features{
     width: 100%;
     padding:5px;
   }
-  .feature-info,.achievement-info,.project{
+  .feature-info,.achievement-info,.project,.features,.sponsor-info,.footer{
     margin: 5px;
     text-align: center;
   }
@@ -115,7 +123,10 @@
   .achievement-details:hover{
     transform:scale(1.05,1.05) ;
   }
-
+  .sponsor{
+    padding:0 100px;
+  }
+  
 }
 
 @media screen and (min-width:769px) and (max-width: 992px){
@@ -146,7 +157,7 @@
   .feature-list{
     width: 100%;
   }
-  .achievement{
+  .achievement,.sponsors{
     gap:40px;
   }
 }

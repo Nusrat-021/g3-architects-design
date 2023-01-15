@@ -316,3 +316,34 @@ main {
   color: #727272;
 
 }
+/* sponsor section styles */
+.sponsor-info{
+  text-align: center;
+  margin:0 200px;
+}
+
+.sponsors{
+  display: flex;
+  gap:150px;
+}
+.sponsor{
+  margin-top: 50px;
+
+}
+.sponsor img{
+  width: 100%;
+  
+}
+/* footer part design */
+.footer{
+  background: #FFF4E7;
+  border-radius: 8px;
+  padding:40px 50px;
+  margin-bottom: 100px;
+}
+.footer-text{
+  font-size: 20px;
+text-align: center;
+color: #424242;
+
+}
