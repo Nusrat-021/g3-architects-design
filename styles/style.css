@@ -1,0 +1,85 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Work+Sans&display=swap');
+
+/* Common css styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans';
+}
+:root{
+  --primary-color: #FF900E;
+  --secondary-color: #131313;
+}
+/* body{
+  display: flex;
+  flex-direction: column;
+  
+} */
+
+
+/* Header styles */
+.header-container{
+  width: 100%;
+  max-width: 1920px;
+  background-color: rgba(255, 144, 14, 0.1);
+  padding: 50px 240px;
+}
+.logo{
+  font-weight: 700;
+font-size: 45px;
+color:var(--secondary-color);
+}
+
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul{
+  display: flex;
+  column-gap: 40px;
+}
+nav ul li{
+  list-style: none;
+  font-weight: 500;
+  font-size: 18px;
+
+}
+nav ul li a{
+  text-decoration: none;
+  color: #424242;
+
+}
+/* header banner styles */
+.banner{
+  text-align: center;
+  max-width: 862px;
+  margin: 0 auto;
+}
+
+.banner-title{
+  font-weight: 700;
+  font-size: 64px;
+  color: var(--secondary-color);
+  margin-top: 102px;
+}
+.banner-description{
+  color: #727272;
+  margin: 32px 0;
+}
+.primary-btn{
+  height: 64px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFFFFF;
+  border: 0;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  padding: 21px 25px;
+}
+.header-container img{
+  width: 100%;
+  margin-top: 50px;
+}
