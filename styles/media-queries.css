@@ -1,8 +1,11 @@
 @media screen and (max-width: 576px) {
-  .header-container,.nav-container, nav ul,.feature{
+  .header-container,.nav-container, nav ul,.feature,.loving-feature{
     width: 100%;
     flex-direction: column;
     padding:5px;
+  }
+  .container{
+    padding:0;
   }
   .logo{
     font-size: 30px;
@@ -11,7 +14,7 @@
     flex-direction: column;
     gap:5px;
   }
-  .banner-title,.feature-title,.title1,.title2{
+  .banner-title,.feature-title,.title1,.title2,.section-title{
     margin-top: 50px;
     font-size: 25px;
   }
@@ -31,12 +34,24 @@
     margin: 0;
     text-align: center;
   }
+  .feature-list{
+    width: 100%;
+  }
+  .btn{
+    padding:5px;
+    font-size: 25px;
+    transform: none;
+    margin-top:5px;
+  }
+  .btn-info{
+    font-size: 16px;
+  }
 
 }
 
 
 @media screen and (min-width:577px) and (max-width:768px) {
-  .header-container,.nav-container, nav ul,.features{
+  .header-container,.nav-container, nav ul{
     width: 100%;
     padding: 15px;
 
@@ -51,26 +66,40 @@
   .logo{
     font-size: 20px;
   }
-  .banner-title,.feature-title,.title1,.title2{
-    font-size: 40px;
+  .banner-title,.feature-title,.title1,.title2,.section-title{
+    font-size: 35px;
     margin-top: 50px;
   }
   .feature-image-set{
     grid-template-columns: repeat(1, 1fr);
   }
-  .feature{
+  .feature,.loving-feature{
     flex-direction: column;
     
   }
+  .container{
+    width: 100%;
+    padding: 0;
+  }
+  .feature-list{
+    width: 100%;
+    padding:5px;
+  }
   .feature-info{
-    margin-top: 5px;
+    margin: 5px;
     text-align: center;
+  }
+  .btn{
+    padding:10px;
+  }
+  .btn-info{
+    font-size: 16px;
   }
 
 }
 
 @media screen and (min-width:769px) and (max-width: 992px){
-  .header-container,.nav-container, nav ul{
+  .header-container,.nav-container, nav ul,.loving-feature{
     width: 100%;
     padding: 15px;
   }
@@ -78,7 +107,7 @@
     padding: 20px;
     width: 100%;
   }
-  .feature{
+  .feature,.loving-feature{
     flex-direction: column;
   }
   nav ul li{
@@ -88,8 +117,14 @@
     font-size: 30px;
   }
   .feature-info{
-    margin-top: 10px;
+    margin: 10px;
     text-align: center;
+  }
+  .container{
+    padding: 0;
+  }
+  .feature-list{
+    width: 100%;
   }
 
 }
