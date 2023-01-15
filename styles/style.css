@@ -233,6 +233,50 @@ main {
   font-weight: 500;
   font-size: 25px;
 }
+/* project showcase section */
+.project-showcase-info{
+  text-align: center;
+}
+.projects{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:20px;
+}
+.project{
+  position: relative;
+  transition: transform 1s;
+}
+.layer{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+.project:hover .layer{
+  opacity: 0.8;
+  
+}
+.project img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  height: auto;
+}
+.project-name{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
 
 /* Achievement section styles */
 .achievement-info{
@@ -247,7 +291,7 @@ main {
 .achievement-details {
   border: 1px solid var(--primary-color);
   border-radius: 8px;
-  padding: 46px 36px 60px 36px;
+  padding:45px 55px;
   text-align: center;
   margin-top: 50px;
   transition: transform 1.25s, rotate 1s;
@@ -259,6 +303,7 @@ main {
 .achievement-details img{
   height: 45px;
 }
+
 .achievement-number {
   font-weight: 600;
   font-size: 30px;
@@ -266,6 +311,7 @@ main {
 }
 
 .achievement-description {
+  font-size: 20px;
   font-weight: 600;
   color: #727272;
 

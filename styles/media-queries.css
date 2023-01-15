@@ -27,7 +27,7 @@
     padding: 10px;
     width: 100%;
   }
-  .feature-image-set{
+  .feature-image-set, .projects{
     grid-template-columns: repeat(1, 1fr);
   }
   .feature-info{
@@ -82,7 +82,7 @@
     font-size: 35px;
     margin-top: 50px;
   }
-  .feature-image-set{
+  .feature-image-set,.projects{
     grid-template-columns: repeat(1, 1fr);
   }
   .feature,.loving-feature,.achievement{
@@ -97,7 +97,7 @@
     width: 100%;
     padding:5px;
   }
-  .feature-info,.achievement-info{
+  .feature-info,.achievement-info,.project{
     margin: 5px;
     text-align: center;
   }
@@ -127,7 +127,7 @@
     padding: 20px;
     width: 100%;
   }
-  .feature,.loving-feature{
+  .feature,.loving-feature,.achievement{
     flex-direction: column;
   }
   nav ul li{
