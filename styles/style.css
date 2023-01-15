@@ -157,13 +157,13 @@ main {
 .container {
   max-width: 1440px;
   margin-top: 130px;
-  padding: 50px 240px;
+  padding: 50px 240px 0 240px;
 }
 
 .loving-feature {
   display: flex;
   align-items: center;
-  gap:54px;
+  gap: 54px;
   width: 100%;
 }
 
@@ -219,7 +219,7 @@ main {
 
 .btn {
   position: relative;
-  transform: translate(-92px,-77px);
+  transform: translate(-92px, -77px);
   color: #FFFFFF;
   font-weight: 700;
   font-size: 65px;
@@ -228,7 +228,45 @@ main {
   padding: 46px 42px 45px 42px;
   border-radius: 8px;
 }
-.btn-info{
+
+.btn-info {
   font-weight: 500;
-font-size: 25px;
+  font-size: 25px;
+}
+
+/* Achievement section styles */
+.achievement-info{
+  width:50%;
+}
+.achievement {
+  display: flex;
+  justify-content: space-around;
+  gap: 110px;
+}
+
+.achievement-details {
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 46px 36px 60px 36px;
+  text-align: center;
+  margin-top: 50px;
+  transition: transform 1.25s, rotate 1s;
+
+}
+.achievement-details:hover{
+  transform: rotate(360deg) scale(1.5,1.25) ;
+}
+.achievement-details img{
+  height: 45px;
+}
+.achievement-number {
+  font-weight: 600;
+  font-size: 30px;
+  color: #424242;
+}
+
+.achievement-description {
+  font-weight: 600;
+  color: #727272;
+
 }

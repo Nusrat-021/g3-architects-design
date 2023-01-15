@@ -1,5 +1,5 @@
 @media screen and (max-width: 576px) {
-  .header-container,.nav-container, nav ul,.feature,.loving-feature{
+  .header-container,.nav-container, nav ul,.feature,.loving-feature,.achievement{
     width: 100%;
     flex-direction: column;
     padding:5px;
@@ -10,7 +10,7 @@
   .logo{
     font-size: 30px;
   }
-  nav ul{
+  nav ul,.achievement{
     flex-direction: column;
     gap:5px;
   }
@@ -47,17 +47,29 @@
     font-size: 16px;
   }
 
+  .achievement-info{
+    width: 100%;
+    text-align: center;
+  }
+  .achievement-details{
+    padding: 10px;
+    margin: 0 30px 10px 30px;
+  }
+  .achievement-details:hover{
+    transform:scale(1.05,1.05) ;
+  }
+
 }
 
 
 @media screen and (min-width:577px) and (max-width:768px) {
-  .header-container,.nav-container, nav ul{
+  .header-container,.nav-container, nav ul,.achievement{
     width: 100%;
     padding: 15px;
 
   }
-  nav ul{
-    column-gap: 30px;
+  nav ul,.achievement{
+    gap: 30px;
   }
   nav ul li{
     font-size: 1em;
@@ -73,19 +85,19 @@
   .feature-image-set{
     grid-template-columns: repeat(1, 1fr);
   }
-  .feature,.loving-feature{
+  .feature,.loving-feature,.achievement{
     flex-direction: column;
     
   }
-  .container{
+  .container,.achievement{
     width: 100%;
     padding: 0;
   }
-  .feature-list{
+  .feature-list,.achievement-info{
     width: 100%;
     padding:5px;
   }
-  .feature-info{
+  .feature-info,.achievement-info{
     margin: 5px;
     text-align: center;
   }
@@ -95,11 +107,19 @@
   .btn-info{
     font-size: 16px;
   }
+  .achievement-details{
+    padding: 10px;
+    margin: 0 30px 10px 30px;
+    gap:30px;
+  }
+  .achievement-details:hover{
+    transform:scale(1.05,1.05) ;
+  }
 
 }
 
 @media screen and (min-width:769px) and (max-width: 992px){
-  .header-container,.nav-container, nav ul,.loving-feature{
+  .header-container,.nav-container, nav ul,.loving-feature,.achievement,.achievement-info{
     width: 100%;
     padding: 15px;
   }
@@ -116,7 +136,7 @@
   .logo{
     font-size: 30px;
   }
-  .feature-info{
+  .feature-info,.achievement-info{
     margin: 10px;
     text-align: center;
   }
@@ -126,7 +146,9 @@
   .feature-list{
     width: 100%;
   }
-
+  .achievement{
+    gap:40px;
+  }
 }
 @media screen and (min-width: 993px) and (max-width:1200px){
   .header-container,.nav-container, nav ul,.features{
