@@ -1,5 +1,5 @@
 @media screen and (max-width: 576px) {
-  .header-container,.nav-container, nav ul{
+  .header-container,.nav-container, nav ul,.feature{
     width: 100%;
     flex-direction: column;
     padding:5px;
@@ -11,21 +11,32 @@
     flex-direction: column;
     gap:5px;
   }
-  .banner-title{
+  .banner-title,.feature-title,.title1,.title2{
     margin-top: 50px;
-    font-size: 30px;
+    font-size: 25px;
   }
   .primary-btn{
     height: 50px;
     padding: 10px;
     font-size: 1em;
   }
+  .features{
+    padding: 10px;
+    width: 100%;
+  }
+  .feature-image-set{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .feature-info{
+    margin: 0;
+    text-align: center;
+  }
 
 }
 
 
 @media screen and (min-width:577px) and (max-width:768px) {
-  .header-container,.nav-container, nav ul{
+  .header-container,.nav-container, nav ul,.features{
     width: 100%;
     padding: 15px;
 
@@ -40,9 +51,20 @@
   .logo{
     font-size: 20px;
   }
-  .banner-title{
+  .banner-title,.feature-title,.title1,.title2{
     font-size: 40px;
     margin-top: 50px;
+  }
+  .feature-image-set{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .feature{
+    flex-direction: column;
+    
+  }
+  .feature-info{
+    margin-top: 5px;
+    text-align: center;
   }
 
 }
@@ -52,16 +74,27 @@
     width: 100%;
     padding: 15px;
   }
+  .features{
+    padding: 20px;
+    width: 100%;
+  }
+  .feature{
+    flex-direction: column;
+  }
   nav ul li{
     font-size: 1.1em;
   }
   .logo{
     font-size: 30px;
   }
+  .feature-info{
+    margin-top: 10px;
+    text-align: center;
+  }
 
 }
 @media screen and (min-width: 993px) and (max-width:1200px){
-  .header-container,.nav-container, nav ul{
+  .header-container,.nav-container, nav ul,.features{
     padding: 30px;
   }
 }
