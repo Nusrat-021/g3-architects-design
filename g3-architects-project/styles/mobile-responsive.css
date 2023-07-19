@@ -10,13 +10,14 @@
   .nav-title {
     font-size: 2rem;
   }
-  nav{
+  nav,
+  .teams-container {
     flex-direction: column;
   }
   nav {
     margin-bottom: 3rem;
   }
-  nav ul li{
+  nav ul li {
     font-size: 0.8rem;
     margin-right: 1.2rem;
   }
@@ -30,21 +31,30 @@
     color: #727272;
     margin: 2rem 0;
   }
-}
+  /* team section */
+  .teams-img-container {
+    grid-template-columns: 1fr;
+  }
+  .teams-content {
+    padding: 0 1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+} 
 
 /* tablet device or medium device */
-@media screen and (min-width:576px) and (max-width:768px) {
-    header{
-        padding: 3.5rem;
-    }
-    .nav-title {
-        font-size: 1.8rem;
-        text-align: center;
-      }
-      nav ul li{
-        font-size: 1rem;
-      }
-      .banner-title{
-        font-size: 2.2rem;
-      }
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  header {
+    padding: 3.5rem;
+  }
+  .nav-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  nav ul li {
+    font-size: 1rem;
+  }
+  .banner-title {
+    font-size: 2.2rem;
+  }
 }
