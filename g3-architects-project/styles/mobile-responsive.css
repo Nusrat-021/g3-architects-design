@@ -11,7 +11,8 @@
     font-size: 2rem;
   }
   nav,
-  .teams-container {
+  .teams-container, 
+  .facts-card-container {
     flex-direction: column;
   }
   nav {
@@ -35,7 +36,7 @@
   .teams-img-container {
     grid-template-columns: 1fr;
   }
-  .teams-content {
+  .teams-content, .facts-content {
     padding: 0 1rem;
     text-align: center;
     margin-top: 0.5rem;
